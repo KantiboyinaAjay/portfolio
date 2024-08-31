@@ -4,6 +4,7 @@ import arrow from './assets/arrow.png'
 import train from './assets/train.png'
 import shop from './assets/shopping.jpg'
 import image from './assets/image.png'
+import CODE from './assets/CODE.png'
 
 const Project = () => {
   return (
@@ -20,7 +21,7 @@ const Project = () => {
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project One</h2>
+            <h2 class="experience-sub-title project-title">TechnicalHub Experience Cloud</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
@@ -38,6 +39,32 @@ const Project = () => {
           </div>
 
           {/*project 2*/ }
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src={CODE}
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">CodeForge</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onClick={() => window.location.href='https://github.com/KantiboyinaAjay/OnlineCodingPlatform.git'}
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onClick={() => window.location.href='https://codeforge-dyvj.onrender.com/'}
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+
+          {/* project 3 */}
 
           <div class="details-container color-container">
             <div class="article-container">
@@ -63,6 +90,8 @@ const Project = () => {
               </button>
             </div>
           </div>
+
+          {/* project 4 */}
           <div class="details-container color-container">
             <div class="article-container">
               <img
@@ -71,7 +100,7 @@ const Project = () => {
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <h2 class="experience-sub-title project-title">Dashboard</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
