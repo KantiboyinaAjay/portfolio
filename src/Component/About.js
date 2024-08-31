@@ -23,7 +23,7 @@ const About = () => {
           <div className="btn-container">
             <button
               className="btn btn-color-2"
-              onClick={() => window.open('https://drive.google.com/file/d/1LvU3VFFz2viSt-3zPTvC0NRCaekEkEJo/view?usp=drive_link')}
+              onClick={() => window.open('https://drive.google.com/file/d/1gzIEKc8AiokY-CmJYoKRIyhegEGqk1dx/view?usp=drive_link')}
             >
               Download CV
             </button>
