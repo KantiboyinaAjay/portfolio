@@ -5,7 +5,7 @@ import arrow from './assets/arrow.png'
 import '../App.css'
 import experience from './assets/experience.png'
 import education from './assets/education.png'
-import profile from './assets/profile.png'
+import profile from './assets/A1.jpg'
 import profile2 from './assets/profile2.jpg'
 
 const About = () => {
@@ -14,7 +14,7 @@ const About = () => {
     <>
       <section id="profile">
         <div className="section__pic-container">
-          <img src={A1} alt="Ajay Kantiboyina profile picture" />
+          <img src={profile} alt="Ajay Kantiboyina profile picture" />
         </div>
         <div className="section__text">
           <p className="section__text__p1">Hello, I'm</p>
