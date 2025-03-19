@@ -14,7 +14,7 @@ const About = () => {
     <>
       <section id="profile">
         <div className="section__pic-container">
-          <img src={profile} alt="Ajay Kantiboyina profile picture" />
+          <img src={profile} alt="Ajay Kantiboyina profile picture" style={{ borderRadius: "50%" }}/>
         </div>
         <div className="section__text">
           <p className="section__text__p1">Hello, I'm</p>
