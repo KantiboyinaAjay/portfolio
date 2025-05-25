@@ -5,6 +5,8 @@ import train from './assets/train.png'
 import shop from './assets/shopping.jpg'
 import image from './assets/image.png'
 import CODE from './assets/CODE.png'
+import todo from './assets/todo.jpg'
+import grf from './assets/grf.jpg'
 
 const Project = () => {
   return (
@@ -13,6 +15,85 @@ const Project = () => {
       <h1 class="title">Projects</h1>
       <div class="experience-details-container">
         <div class="about-containers">
+          {/*project 1*/}
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src={CODE}
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">CodeForge</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onClick={() => window.location.href='https://github.com/KantiboyinaAjay/CodeForge'}
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onClick={() => window.location.href='https://codeforge-dyvj.onrender.com/'}
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+
+          {/* project 2 */}
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src={grf}
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">GRF</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onClick={() => window.location.href='https://github.com/KantiboyinaAjay/GroundReactionForce'}
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onClick={() => window.location.href='https://groundreactionforce.netlify.app/'}
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+
+          {/* project 3 */}
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src={todo}
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">TaskBoard</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onClick={() => window.location.href='https://github.com/KantiboyinaAjay/Todo'}
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onClick={() => window.location.href='https://todo4221.netlify.app/'}
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+
+          {/*project 4*/ }
           <div class="details-container color-container">
             <div class="article-container">
               <img
@@ -38,34 +119,7 @@ const Project = () => {
             </div>
           </div>
 
-          {/*project 2*/ }
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src={CODE}
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">CodeForge</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onClick={() => window.location.href='https://github.com/KantiboyinaAjay/OnlineCodingPlatform.git'}
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onClick={() => window.location.href='https://codeforge-dyvj.onrender.com/'}
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-
-          {/* project 3 */}
-
+          {/* project 5 */}
           <div class="details-container color-container">
             <div class="article-container">
               <img
@@ -91,7 +145,7 @@ const Project = () => {
             </div>
           </div>
 
-          {/* project 4 */}
+          {/* project 6 */}
           <div class="details-container color-container">
             <div class="article-container">
               <img

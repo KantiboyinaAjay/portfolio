@@ -10,7 +10,7 @@ const Skill = () => {
       <div class="experience-details-container">
         <div class="about-containers">
           <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
+            <h2 class="experience-sub-title">Web Development</h2>
             <div class="article-container">
               <article>
                 <img
@@ -52,7 +52,7 @@ const Skill = () => {
                   class="icon"
                 />
                 <div>
-                  <h3>Bootstrap</h3>
+                  <h3>TypeScript</h3>
                   <p>Basic</p>
                 </div>
               </article>
@@ -67,10 +67,21 @@ const Skill = () => {
                   <p>Intermediate</p>
                 </div>
               </article>
+              <article>
+                <img
+                  src={checkmark}
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Angular</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
             </div>
           </div>
           <div class="details-container">
-            <h2 class="experience-sub-title">Languages</h2>
+            <h2 class="experience-sub-title">Skills</h2>
             <div class="article-container">
               <article>
                 <img
@@ -124,6 +135,17 @@ const Skill = () => {
                 />
                 <div>
                   <h3>SQL</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src={checkmark}
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MongoDB</h3>
                   <p>Intermediate</p>
                 </div>
               </article>

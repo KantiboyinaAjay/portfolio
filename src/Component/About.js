@@ -67,7 +67,7 @@ const About = () => {
                   className="icon"
                 />
                 <h3>Experience</h3>
-                <p>1+ years <br />Frontend Development</p>
+                <p>2+ years <br />Web Development</p>
               </div>
               <div className="details-container">
                 <img
@@ -82,7 +82,7 @@ const About = () => {
             <div className="text-container">
               <p>
               Hello, I'm Ajay,
-              I excel in problem-solving, SQL, web development, Salesforce, and have a passion for coding in Python. 
+              I excel in problem-solving, SQL, web development, Salesforce, and have a passion for coding in Python & C++. 
               Eager to apply my skills in real-world projects, I'm committed to continuous learning and making a meaningful impact in technology.
               </p>
             </div>
