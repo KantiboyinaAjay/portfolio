@@ -50,7 +50,7 @@ const Project = () => {
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">GRF</h2>
+            <h2 class="experience-sub-title project-title">Ground Reaction Force</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
