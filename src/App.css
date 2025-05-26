@@ -9,6 +9,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  background-color: #f7f9fc;
 }
 
 html {
@@ -291,6 +292,7 @@ section {
   position: absolute;
   right: -5rem;
   bottom: 2.5rem;
+  animation: bounce 2s infinite;
 }
 
 .details-container {
@@ -353,33 +355,71 @@ article .icon {
   cursor: default;
 }
 
-/* PROJECTS SECTION */
-
-#projects {
-  position: relative;
+/* PROJECT */
+.projects {
+  padding: 4rem 2rem;
+  background-color: #f9fafb;
+  text-align: center;
 }
 
-.color-container {
-  border-color: rgb(163, 163, 163);
-  background: rgb(250, 250, 250);
+.projects__intro {
+  color: #6b7280;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
 }
 
-.project-img {
-  border-radius: 2rem;
-  width: 90%;
-  height: 90%;
+.projects__title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #111827;
 }
 
-.project-title {
-  margin: 1rem;
-  color: black;
+.projects__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
 }
 
-.project-btn {
-  color: black;
-  border-color: rgb(163, 163, 163);
+.project-card {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem;
+  transition: transform 0.3s ease;
 }
 
+.project-card:hover {
+  transform: translateY(-8px);
+}
+
+.project-card__image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.project-card__title {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: #1f2937;
+}
+
+.project-card__buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+} 
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
 /* CONTACT */
 
 #contact {
@@ -449,6 +489,7 @@ footer p {
 @media screen and (max-width: 1200px) {
   #desktop-nav {
     display: none;
+    border-bottom: #111827;
   }
   #hamburger-nav {
     display: flex;
@@ -533,5 +574,11 @@ footer p {
   }
   .text-container {
     text-align: justify;
+  }
+}
+
+@media (max-width: 600px) {
+  .project-card__image {
+    height: 150px;
   }
 }

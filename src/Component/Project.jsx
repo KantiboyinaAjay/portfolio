@@ -1,185 +1,80 @@
-import React from 'react'
-import '../App.css'
-import arrow from './assets/arrow.png'
-import train from './assets/train.png'
-import shop from './assets/shopping.jpg'
-import image from './assets/image.png'
-import CODE from './assets/CODE.png'
-import todo from './assets/todo.jpg'
-import grf from './assets/grf.jpg'
+import React from 'react';
+import '../App.css';
+import train from './assets/train.png';
+import shop from './assets/shopping.jpg';
+import image from './assets/image.png';
+import CODE from './assets/CODE.png';
+import todo from './assets/todo.jpg';
+import grf from './assets/grf.jpg';
+
+const projects = [
+  {
+    img: CODE,
+    title: 'CodeForge',
+    github: 'https://github.com/KantiboyinaAjay/CodeForge',
+    demo: 'https://codeforge-dyvj.onrender.com/',
+  },
+  {
+    img: grf,
+    title: 'Ground Reaction Force',
+    github: 'https://github.com/KantiboyinaAjay/GroundReactionForce',
+    demo: 'https://groundreactionforce.netlify.app/',
+  },
+  {
+    img: todo,
+    title: 'TaskBoard',
+    github: 'https://github.com/KantiboyinaAjay/Todo',
+    demo: 'https://todo4221.netlify.app/',
+  },
+  {
+    img: image,
+    title: 'TechnicalHub Experience Cloud',
+    github: 'https://github.com/KantiboyinaAjay',
+    demo: 'https://technicalhub-fd-dev-ed.develop.my.site.com/txpcd/s/',
+  },
+  {
+    img: shop,
+    title: 'Webmert',
+    github: 'https://github.com/KantiboyinaAjay/shopping',
+    demo: 'https://webmert.netlify.app/',
+  },
+  {
+    img: train,
+    title: 'Dashboard',
+    github: 'https://github.com/KantiboyinaAjay',
+    demo: 'https://drive.google.com/file/d/13W2Ya-L2UBPaTNJfgIILK5MyrsoI-nBi/view?usp=drive_link',
+  },
+];
 
 const Project = () => {
   return (
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          {/*project 1*/}
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src={CODE}
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">CodeForge</h2>
-            <div class="btn-container">
+    <section id="projects" className="projects">
+      <p className="projects__intro">Browse My Recent</p>
+      <h1 className="projects__title">Projects</h1>
+      <div className="projects__grid">
+        {projects.map((project, index) => (
+          <div className="project-card" key={index}>
+            <img src={project.img} alt={project.title} className="project-card__image" />
+            <h2 className="project-card__title">{project.title}</h2>
+            <div className="project-card__buttons">
               <button
-                class="btn btn-color-2 project-btn"
-                onClick={() => window.location.href='https://github.com/KantiboyinaAjay/CodeForge'}
+                className="btn btn-color-2 project-btn"
+                onClick={() => window.open(project.github, '_blank')}
               >
-                Github
+                GitHub
               </button>
               <button
-                class="btn btn-color-2 project-btn"
-                onClick={() => window.location.href='https://codeforge-dyvj.onrender.com/'}
+                className="btn btn-color-2 project-btn"
+                onClick={() => window.open(project.demo, '_blank')}
               >
                 Live Demo
               </button>
             </div>
           </div>
-
-          {/* project 2 */}
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src={grf}
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Ground Reaction Force</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onClick={() => window.location.href='https://github.com/KantiboyinaAjay/GroundReactionForce'}
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onClick={() => window.location.href='https://groundreactionforce.netlify.app/'}
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-
-          {/* project 3 */}
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src={todo}
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">TaskBoard</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onClick={() => window.location.href='https://github.com/KantiboyinaAjay/Todo'}
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onClick={() => window.location.href='https://todo4221.netlify.app/'}
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-
-          {/*project 4*/ }
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src={image}
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">TechnicalHub Experience Cloud</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onClick={() => window.location.href='https://github.com/KantiboyinaAjay'}
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onClick={()=>window.location.href='https://technicalhub-fd-dev-ed.develop.my.site.com/txpcd/s/'}
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-
-          {/* project 5 */}
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src={shop}
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Webmert</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onClick={() => window.location.href='https://github.com/KantiboyinaAjay/shopping'}
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onClick={() => window.location.href='https://webmert.netlify.app/'}
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-
-          {/* project 6 */}
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src={train}
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Dashboard</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onClick={() => window.location.href='https://github.com/KantiboyinaAjay'}
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onClick={() => window.location.href='https://drive.google.com/file/d/13W2Ya-L2UBPaTNJfgIILK5MyrsoI-nBi/view?usp=drive_link'}
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-        </div>
+        ))}
       </div>
-      <img
-          src={arrow}
-          alt="Arrow icon"
-          className="icon arrow"
-          onClick={() => window.location.href='./#contact'}
-        />
     </section>
-  )
-}
+  );
+};
 
-export default Project
+export default Project;

@@ -16,7 +16,7 @@ const Contact = () => {
             alt="Email icon"
             class="icon contact-icon email-icon"
           />
-          <p><a href="mailto:ajaykantiboyina12389@gmail.com">AjayKantiboyina12389@gmail.com</a></p>
+          <p><a href="mailto:ajaykantiboyina12389@gmail.com?subject=Hello Ajay&body=Hi Ajay,">AjayKantiboyina12389@gmail.com</a></p>
         </div>
         <div class="contact-info-container">
           <img
